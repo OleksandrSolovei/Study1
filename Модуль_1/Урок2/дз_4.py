@@ -1,0 +1,7 @@
+fraza = input('Введіть фразу з 5 символів:')
+kod_sumvolu1 = ord(fraza[0])
+kod_sumvolu2 = ord(fraza[1])
+kod_sumvolu3 = ord(fraza[2])
+kod_sumvolu4 = ord(fraza[3])
+kod_sumvolu5 = ord(fraza[4])
+print(kod_sumvolu1 + kod_sumvolu2 + kod_sumvolu3 + kod_sumvolu4 + kod_sumvolu5)
