@@ -9,15 +9,15 @@ print(string.replace('Lorem', 'LOREM'))
 
 print(str(len(string)).isdigit())
 print(string.title())
-print(string.capitalize())
+print(string.capitalize()) # перше слово з великої літери
 print(string.lower())
 print(string.upper())
-print(string.center(100, '+'))
-my_char = ord(string[0])
+print(string.center(100, '+')) # 100 - максимальна кількість символів в рядку
+my_char = ord(string[0]) # код символу
 print(my_char)
-print(chr(my_char))
-print('\nstring'.isspace())     # ???????????
-print(string.startswith('L'))
-print(string.endswith('.'))
-print('string'.isalpha())
-print(string.casefold())
+print(chr(my_char)) # перетворює код символу в літеру
+print('\nstring'.isspace())    # превіряє чи є пробіли
+print(string.startswith('L'))  # чи починається із якогось символу
+print(string.endswith('.'))    # чи закінчується на символ
+print('string'.isalpha())      # в рядку тільки літери
+print(string.casefold())       # генерування регістру

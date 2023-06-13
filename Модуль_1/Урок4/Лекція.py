@@ -1,19 +1,14 @@
-# import turtle
-# turtle.forward(50)
-# turtle.left(90)
-# turtle.forward(50)
-# turtle.right(50)
-# turtle.forward(100)
-# turtle.exitonclick()
-
-a = int(input('Введіть перше число: '))
-b = int(input('Введіть друге число: '))
-tot = 0
-while a >= b:
-    print('Перше число має бути менше за друге!')
-    a = int(input('Введіть перше число: '))
-    b = int(input('Введіть друге число: '))
+numeric_1 = input("Введіть число перше: ")
+numeric_2 = input("Введіть число друге: ")
+if numeric_1.isdigit() and numeric_2.isdigit():
+    numeric_1 = int(numeric_1)
+    numeric_2 = int(numeric_2)
+    if numeric_1 < numeric_2:
+        total = 0
+        for i in range(numeric_1, numeric_2 + 1, 7):
+            total += i
+        print(total)
+    else:
+        print("Перше число має бути менше за друге.")
 else:
-    for i in range(a, b + 1, 7):
-        tot += i
-    print('Сума =', tot)
+    print("Некоректні дані. Введіть два числа.")
